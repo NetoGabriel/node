@@ -1,0 +1,10 @@
+
+package.json
+coverage/clover.xml
+coverage/clover.xml
+*.json
+package.json
+package.json
+coverage/lcov-report/calculador.js.html
+*.html
+*.html
