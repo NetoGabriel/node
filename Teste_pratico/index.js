@@ -41,7 +41,6 @@ async function ReadWorkSheet() {
         throw error;
     }
 }
-
 async function AddUser(data = {}) {
     try {
         // Atualize com o endpoint da sua API
