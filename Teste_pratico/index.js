@@ -1,8 +1,9 @@
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { readFileSync } from 'fs';
 
-const credenciais = JSON.parse(readFileSync('./teste-planilha-449701-238bb12150d3.json', 'utf8'));
-const arquivo = { id: '1exCNm8MN8tPUnaCbdS_bUwLaAH7gd0ib7LZ_IEiO95Y' }; // Atualize com o ID da sua planilha
+const credenciais = JSON.parse(readFileSync('', 'utf8')); 
+// Atualize com o caminho do arquivo de credenciais
+const arquivo = { id: '' }; // Atualize com o ID da sua planilha
 
 async function GetDoc() {
     try {
@@ -43,7 +44,8 @@ async function ReadWorkSheet() {
 
 async function AddUser(data = {}) {
     try {
-        const response = await fetch('https://apigenerator.dronahq.com/api/80QJxO0A/testeplanilha', {
+        // Atualize com o endpoint da sua API
+        const response = await fetch('', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -99,7 +101,7 @@ async function AddUserToSheet(user) {
 
 const newUser = {
     nome: 'Exemplo',
-    email: 'jg@example.com',
+    email: 'EX@example.com',
     idade: 30
 };
 
